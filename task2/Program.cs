@@ -5,28 +5,34 @@
 
     public class Logic
     {
-        public static int FindMaxValue(int num)
+        public static string FindMaxValue(int n)
         {
+            int max = n;
+            string answer = "";
+            for (int i = 1; i < max; i++)
+            {
+                if (i * i > max)
+                {
+                    answer = max.ToString();
+                    break;
+                }
+                answer = (i * i) + " ";
+            }
 
+            return answer;
         }
 
 
-    class Program
-    {
-        static void Main(string[] args)
+        class Program
         {
-            Console.WriteLine("Введите число");
-            var n = int.Parse(Console.ReadLine());
-
-
-            for (int i = 1; i < n; i++)
+            static void Main(string[] args)
             {
-                if (i * i > n)
-                {
-                    Console.WriteLine(n);
-                    break;
-                }
-                Console.WriteLine(i * i);
+                Console.WriteLine("Введите число");
+                var n = int.Parse(Console.ReadLine());
+
+                Console.WriteLine(Logic.FindMaxValue(n));
+
+
             }
         }
     }
