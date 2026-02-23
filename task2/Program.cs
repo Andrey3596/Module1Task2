@@ -1,13 +1,22 @@
-﻿Console.WriteLine("Введите число");
-var n = int.Parse(Console.ReadLine());
-
-
-for (int i = 1; i < n; i++)
+﻿namespace task2
 {
-    if (i * i > n)
+    class Program
     {
-        Console.WriteLine(n);
-        break;
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Введите число");
+            var n = int.Parse(Console.ReadLine());
+
+
+            for (int i = 1; i < n; i++)
+            {
+                if (i * i > n)
+                {
+                    Console.WriteLine(n);
+                    break;
+                }
+                Console.WriteLine(i * i);
+            }
+        }
     }
-    Console.WriteLine(i * i);
 }
