@@ -5,18 +5,17 @@
 
     public class Logic
     {
-        public static string FindMaxValue(int n)
+        public static string FindFirstGreaterThanN(int n)
         {
-            int max = n;
             string answer = "";
-            for (int i = 1; i < max; i++)
+            for (int i = 1; i <= n; i++)
             {
-                if (i * i > max)
+                if (i * i > n)
                 {
-                    answer = max.ToString();
+                    answer += n.ToString();
                     break;
                 }
-                answer = (i * i) + " ";
+                answer += (i * i) + " ";
             }
 
             return answer;
