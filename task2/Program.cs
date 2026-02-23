@@ -1,5 +1,16 @@
 ﻿namespace task2
 {
+
+
+
+    public class Logic
+    {
+        public static int FindMaxValue(int num)
+        {
+
+        }
+
+
     class Program
     {
         static void Main(string[] args)
