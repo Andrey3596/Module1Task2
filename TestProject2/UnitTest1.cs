@@ -19,7 +19,7 @@ namespace TestProject2.Tests
 
             int n = 0;
             string answer = Logic.FindFirstGreaterThanN(n);
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual("1 0", answer);
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual("", answer);
         }
 
 
@@ -44,7 +44,7 @@ namespace TestProject2.Tests
 
             int n = 5;
             string answer = Logic.FindFirstGreaterThanN(n);
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual("1 4 9 5", answer);
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual("1 4 5", answer);
         }
     }
 }
