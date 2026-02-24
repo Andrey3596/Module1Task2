@@ -1,11 +1,11 @@
-﻿using NUnit.Framework;
-using task2;
+﻿using task2;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace TestProject2.Tests
 {
@@ -14,37 +14,22 @@ namespace TestProject2.Tests
     {
 
         [TestMethod()]
-        public void Test1()
+        public void NumberZero()
         {
-
-            int n = 0;
-            string answer = Logic.FindFirstGreaterThanN(n);
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual("", answer);
+            string answer = Logic.FindFirstGreaterThanN(0);
+            Assert.AreEqual("", answer);
         }
-
-
-
-
-
         [TestMethod()]
-        public void Test2()
+        public void SquareNumbe()
         {
-
-            int n = 4;
-            string answer = Logic.FindFirstGreaterThanN(n);
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual("1 4 4", answer);
+            string answer = Logic.FindFirstGreaterThanN(4);
+            Assert.AreEqual("1 4 4", answer);
         }
-
-
-
-
         [TestMethod()]
-        public void Test3()
+        public void NoSquareNumbe()
         {
-
-            int n = 5;
-            string answer = Logic.FindFirstGreaterThanN(n);
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual("1 4 5", answer);
+            string answer = Logic.FindFirstGreaterThanN(5);
+            Assert.AreEqual("1 4 5", answer);
         }
     }
 }
