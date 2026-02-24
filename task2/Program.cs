@@ -29,7 +29,7 @@
                 Console.WriteLine("Введите число");
                 var n = int.Parse(Console.ReadLine());
 
-                Console.WriteLine(Logic.FindMaxValue(n));
+                Console.WriteLine(Logic.FindFirstGreaterThanN(n));
 
 
             }
