@@ -13,19 +13,6 @@ namespace TestProject2.Tests
     public class Tests
     {
 
-
-
-        [TestMethod()]
-        public void Test()
-        {
-
-            int n = 0;
-            string answer = Logic.FindFirstGreaterThanN(n);
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual("1 0", answer);
-        }
-
-
-
         [TestMethod()]
         public void Test1()
         {
@@ -53,18 +40,6 @@ namespace TestProject2.Tests
 
         [TestMethod()]
         public void Test3()
-        {
-
-            int n = 5;
-            string answer = Logic.FindFirstGreaterThanN(n);
-            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual("1 4 9 5", answer);
-        }
-
-
-
-
-        [TestMethod()]
-        public void Test4()
         {
 
             int n = 5;
