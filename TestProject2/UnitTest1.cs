@@ -9,17 +9,16 @@ using System.Threading.Tasks;
 
 namespace TestProject2.Tests
 {
+    [TestClass()]
     public class Tests
     {
-        [SetUp]
-        public void Setup()
+        [TestMethod()]
+        public void Test()
         {
-        }
 
-        [Test]
-        public void Test1()
-        {
-            Assert.Pass();
+            int n = 0;
+            string answer = Logic.FindFirstGreaterThanN(n);
+            Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual("1 0", answer);
         }
     }
 }
